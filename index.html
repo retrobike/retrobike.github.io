@@ -23,19 +23,23 @@
 <body>
 
 <div class="nav">
-    <ul class="nav-ul">
-        <li class="nav-li"><a href="#" class="nav-button"><span class="left">RetroBike</span></a></li>
-        <li class="nav-li text-center"><a href="#biketutorial" class="nav-button"><span class="right">Safety Tutorial</span></a></li>
-        <li class="nav-li"><a href="#howtoplay" class="nav-button"><span class="right">How to play</span></a></li>
-        <li class="nav-li"><a href="#about" class="nav-button"><span class="right">Team Info</span></a></li>
+    <ul class="nav-ul text-center">
+        <li class="nav-li"><a href="#biketutorial" class="nav-button">Safety Video</span></a></li>
+        <li class="nav-li"><a href="#howtoplay" class="nav-button">Bike Guide</span></a></li>
+        <li class="nav-li"><a href="#" class="logo"><img src="img/game1.png" height="50" width="50"></a></li>
+        <li class="nav-li"><a href="#raspberrypi" class="nav-button">Set Up Game</span></a></li>
+        <li class="nav-li"><a href="#about" class="nav-button">Team Info</a></li>
     </ul>
 </div>
-
+<li class="nav-li"><a href="#howtoplay" class="nav-button"><span class="right">Bike Tutorial</span></a></li>
+<li class="nav-li"><a href="#" class="nav-button"><img src="img/game1.png" height="50" width="50"></a></li>
+<li class="nav-li"><a href="#raspberrypi" class="nav-button"><span class="right">Set Up Game</span></a></li>
+<li class="nav-li"><a href="#about" class="nav-button"><span class="right">Team Info</span></a></li>
   <div class="jumbotron" id="main-section">
     <div class="title">
-        <h1 id="name" class="animated bounceIn">RetroBike</h1>
+        <h1 id="name" class="animated bounceInDown">RetroBike</h1>
         <p class="animated bounceIn">A fun indoor bike that will let you play video games!</p>
-        <a href="#biketutorial">Watch the safety video first</a>
+        <a href="#biketutorial" class="animated bounceInUp">Watch the safety video first</a>
     </div>
   </div>
 
@@ -43,7 +47,7 @@
   <a id="biketutorial" class="pages"></a>
     <div class="container text-center">
       <div class="row">
-          <h2>Be safe to have more fun! :)
+          <h2 class="animated bounceIn">Be safe to have more fun! :)
           <br>
           Please watch this safety video before you start playing</h2>
           <br>
@@ -59,7 +63,7 @@
         <div class="container">
             <div class="row">
                 <div class="text-center">
-                  <h1 class="name2">Preparations</h1>
+                  <h1 class="name2 animated bounceIn">How to use the bike!</h1>
                   <img id="cute-img" src="img/cute.PNG" height="100px" width="200px"/>
                 </div>
                 <ol>
@@ -76,7 +80,7 @@
                 </ol>
             </div>
 
-            <div class="row"> 
+            <div class="row">
               <div class="col-sm-6">
                 <div class="pedals-img">
                   <img src="img/pedals.png" height="250px" width="250px"/>
@@ -86,7 +90,7 @@
                 <br>
                 <br>
                 <ol>
-                  <li value="2"><h3>To get on the bike, place one foot on the pedal, and then use that to step onto the sit on the seat.</h3></li><br>             
+                  <li value="2"><h3>To get on the bike, place one foot on the pedal, and then use that to step onto the sit on the seat.</h3></li><br>
                   <p>You can then place your other foot into the other pedal. </p>
                   <p>Make sure your feet are strapped in or snug in the pedals so that you can get as much traction as possible.</p>
                   <p>Pedal for a bit on the bike, and raise the difficulty of friction accordingly using the black knob on the bike.</p>
@@ -111,58 +115,98 @@
 
             <div class="row">
               <div class="text-center">
-                <img src="img/cute2.png" height="300px" width="400px"/>
+                <img src="img/cute2.png" height="200px" width="300px"/>
               </div>
             </div>
+    </div> <!-- end of container -->
+  </div> <!-- end of playGame -->
 
-                  <li><h3>Next, I will explain how to connect the Raspberry Pi onto the TV and how to turn it on</h3></li>
-                    <p>Plug in the AV out cord, the blue cord with #1 on it, into the TV</p>
-                    <ul>
-                      <li>The red plug should go in the yellow, while the yellow goes in the red. White will just go into white.</li>
-                      <li>Make sure you are on the right component/channel.</li>
-                    </ul>
-                    <p>Plug in the controller into the usb port, labeled #2 in the color purple.</p>
-                    <p>Plug cord #3 into the battery, which is in the color red. This will turn on the RPI.</p>
-                    <br>
-                </ol>
+    <div class="raspberry">
+      <a id="raspberrypi" class="pages"></a>
+        <div class="container text-center">
+          <h1 class="animated bounceIn">How to set up the game!</h1>
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="steps_img" src="img/test.jpg" height="250" width="250">
+            </div>
+            <div class="col-lg-6">
+              <p id="steps">1. Plug in the AV out cord, the <span style="color:white; background-color:blue; padding: 5px;">blue</span> cord with #1 on it, into the TV</p>
+              <ul>
+                <li>The <span background-color="background-color:red; padding: 5px; ">red</span> plug should go in the <span style="background-color:gold; padding: 5px;">yellow</span>,
+                  while the <span style="background-color:gold; padding: 5px;">yellow</span> goes in the <span style="color: white; background-color:red; padding: 5px;">red</span>. White will just go into white.</li>
+                <li>Make sure you are on the right component/channel.</li>
+              </ul>
+            </div>
+          </div> <!--end of row1-->
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="steps_img" src="img/test.jpg" height="250" width="250">
+            </div>
+            <div class="col-lg-6">
+              <p id="steps">2.Plug in the controller into the usb port, labeled #2 in the color <span style="color: white; background-color:purple; padding: 5px;">purple</span>.</p>
+            </div>
+          </div> <!--end of row2-->
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="steps_img" src="img/test.jpg" height="250" width="250">
+            </div>
+            <div class="col-lg-6">
+              <p id="steps">3. Plug cord #3 into the battery, which is in the color
+                <span style="color: white; background-color:red; padding: 5px;">red</span>. This will turn on the RPI.</p>
+            </div>
+          </div><!-- end of row3 -->
 
-                <h3>How to start playing</h3>
-                <p>Choose your console by pressing left/right and press a to select it</p>
-                <p>Choose the game you would like to play and then press a</p>
-                <p>To save, follow the save instructions in game</p>
-                <p>To quit, press (select) and (start) at the same time</p>
-                <p>To turn off Raspberry Pi, first make sure you are at the home page and then unplug cord #3 (red) from the battery (red). If you plug the cord when you are not in the home page, your game will not save. </p>
+          <h1>How to start playing</h1>
 
-                <!-- Trigger the modal with a button -->
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Are you ready? Let's Play!</button>
+          <p>1. Choose your console by pressing left/right and press a to select it</p>
+          <p>2. Choose the game you would like to play and then press A</p>
+          <br>
+          <p><strong>TO SAVE</strong>, follow the save instructions in game</p>
+          <p><strong>TO QUIT</strong>, press (select) and (start) at the same time</p>
+          <p><strong>TO TURN OFF</strong> Raspberry Pi, first make sure you are at the home page and then unplug
+            <span style="color: white; background-color:red; padding: 5px;">red</span> cord (label #3)
+            from the <span style="color: white; background-color:red; padding: 5px;">red</span> battery.
+            If you plug the cord when you are not in the home page, your game will not save! </p>
 
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Are you ready? Let's Play!</button>
 
-                <!-- Modal -->
-                <div id="myModal" class="modal fade" role="dialog">
+              <!-- Modal -->
+              <div id="myModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
-                <!-- Modal content-->
-                <div class="modal-content">
+                  <!-- Modal content-->
+                  <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Hooray! Let's start biking!</h4>
+                      <img src="img/biking.gif" height="300" width="300">
                     </div>
                     <div class="modal-body">
-                    <p>Some text in the modal.</p>
+                      <p>Exit this website and turn on the bike to start playing! Have fun :) If you ever need help, you can come back to this website.</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
+                  </div>
                 </div>
-                </div>
-            </div>
-        </div> <!-- end of Modal -->
-    </div> <!-- end of container -->
+              </div>
+            </div> <!-- end of Modal -->
+
+            <div class="row">
+              <div class="text-center">
+                <img class="center" src="img/pikachu.gif" height="200" width="300">
+              </div>
+            </div><!-- end of row-->
+
+          </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div><!-- end of raspberry -->
 
 <div class="about">
   <a id="about" class="pages"></a>
     <div class="container text-center">
       <div class="row">
-        <h2 class="name2">Meet the RetroBike Team!</h2>
+        <h2 class="name2 animated bounceIn">Meet the RetroBike Team!</h2>
         <div class="col-lg-6">
           <img src="img/team_photo.jpg" height="300" width="500">
         </div>
@@ -175,7 +219,7 @@
         </div>
       </div> <!-- end of row -->
     </div> <!-- end of container -->
-</div><!-- end of tutorial -->
+</div><!-- end of about -->
 
 <script src="js/index.js"></script>
 </body>
