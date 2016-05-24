@@ -98,3 +98,20 @@ body{
     height: 1000px;
     background-color: #99FFCC;
 }
+
+li {
+    font-size: 20px;
+}
+
+#cute-img {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.pedals-img{
+    margin-left: 100px;
+}
+
+.brake-img{
+    padding-left: 50px;
+}
