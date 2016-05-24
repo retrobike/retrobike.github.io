@@ -3,6 +3,11 @@ body{
     font-family: 'Chewy', sans-serif;
 }
 
+p {
+    font-size: 14pt;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .nav{
     padding: 15px 0px 10px 0px;
     background-color: #99FF00;
