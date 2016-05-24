@@ -14,8 +14,6 @@
       <!-- Scripts -->
       <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
-      <script src="js/index.js"></script>
-
       <!-- Custom Font -->
       <link href="font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet">
       <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
@@ -25,9 +23,10 @@
 
 <div class="nav">
     <ul class="nav-ul">
+        <li class="nav-li"><a href="#" class="nav-button"><span class="left">RetroBike</span></a></li>
         <li class="nav-li"><a href="#biketutorial" class="nav-button">Safety Tutorial</a></li>
         <li class="nav-li"><a href="#howtoplay" class="nav-button">How to play</a></li>
-        <li class="nav-li"><a href="#about" class="nav-button">About</a></li>
+        <li class="nav-li"><a href="#about" class="nav-button">Team Info</a></li>
     </ul>
 </div>
 
@@ -35,6 +34,7 @@
     <div class="title">
         <h1 id="name" class="animated bounceIn">RetroBike</h1>
         <p class="animated bounceIn">A fun indoor bike that will let you play video games!</p>
+        <a href="#biketutorial">Watch the safety video first</a>
     </div>
   </div>
 
@@ -42,11 +42,13 @@
   <a id="biketutorial" class="pages"></a>
     <div class="container text-center">
       <div class="row">
-          <h2>Before you start, watch this SAFETY video first!</h2>
-          <img src="img/pokemon.gif" height="100px" width="200px"/>
+          <h2>Be safe to have more fun! :)
+          <br>
+          Please watch this safety video before you start playing</h2>
           <br>
             <iframe width="500" height="305" src="https://www.youtube.com/embed/2cymqAVPWuo" frameborder="0" allowfullscreen></iframe>
           <br>
+          <img src="img/pokemon.gif" height="100px" width="200px"/>
       </div> <!-- end of row -->
     </div> <!-- end of container -->
 </div><!-- end of tutorial -->
@@ -154,10 +156,21 @@
   <a id="about" class="pages"></a>
     <div class="container text-center">
       <div class="row">
-          <h2>About Us</h2>
+        <h2>Meet the RetroBike Team!</h2>
+        <div class="col-lg-6">
+          <img src="img/team_photo.jpg" height="300" width="500">
+        </div>
+        <div class="col-lg-6">
+          <h4> The Town and Country Village Learning Center is an organization established in the community
+            dedicated to provide an environment for learning and extra curriculars which include gardening,
+            dancing, yoga, computing exercises, and etc.We are a group of U.C. San Diego Global Ties engineering
+            students who believe in contributing back to the community through providing programs that will help
+            the center achieve its mission.</h4>
+        </div>
       </div> <!-- end of row -->
     </div> <!-- end of container -->
 </div><!-- end of tutorial -->
 
+<script src="js/index.js"></script>
 </body>
 </html>
