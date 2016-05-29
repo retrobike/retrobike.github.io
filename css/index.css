@@ -133,6 +133,10 @@ p {
   margin-top: 100px;
 }
 
+.raspberry h2{
+  color: orange;
+}
+
 .raspberry #steps{
   margin-top: 50px;
 }
